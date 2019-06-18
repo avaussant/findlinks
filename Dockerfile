@@ -1,5 +1,5 @@
 FROM golang 
-RUN go get golang.org/x/net/html
+RUN get -v github.com/flaviocopes/findlinks
 EXPOSE 8000
 ENTRYPOINT ["/findlinks"]
 COPY ./bin/ /
